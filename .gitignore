@@ -2,6 +2,8 @@
 
 
 !.gitignore
+!/.vscode/
+!/.vscode/**
 !/Labs/
 !/Labs/**
 
@@ -9,3 +11,22 @@
 !/Lab_Files/**
 
 .DS_Store
+**/.DS_Store
+
+# Build artifacts (C/C++)
+**/build/
+**/build/**
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+*.obj
+*.dSYM/
+*.dSYM/**
+
+# Known local binaries
+.vscode/lab1
+.vscode/lab1.dSYM/
+Labs/lab3
