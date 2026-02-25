@@ -1,5 +1,6 @@
 {
+  "explorer.compactFolders": false,
   "code-runner.executorMap": {
-    "c": "cd \"$dir\" && if [ -f main.c ] && [ -f intlist_common.c ] && [ -f intlist2.c ]; then mkdir -p build && clang -std=c11 -Wall -Wextra -g main.c intlist_common.c intlist2.c -o build/main && ./build/main; else clang -std=c11 -Wall -Wextra -g \"$fileName\" -o \"$fileNameWithoutExt\" && \"./$fileNameWithoutExt\"; fi"
+    "c": "cd \"$dir\" && /bin/zsh \"$workspaceRoot/.vscode/c_runner.sh\" build-run \"$fileName\" \"$fileNameWithoutExt\""
   }
 }

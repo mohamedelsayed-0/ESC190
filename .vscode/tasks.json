@@ -7,7 +7,7 @@
       "command": "/bin/zsh",
       "args": [
         "-lc",
-        "mkdir -p build && clang -std=c11 -Wall -Wextra -g main.c intlist_common.c intlist2.c -o build/${fileBasenameNoExtension}"
+        "/bin/zsh \"${workspaceFolder}/.vscode/c_runner.sh\" build \"${fileBasename}\" \"${fileBasenameNoExtension}\""
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -26,7 +26,7 @@
       "command": "/bin/zsh",
       "args": [
         "-lc",
-        "./build/${fileBasenameNoExtension}"
+        "/bin/zsh \"${workspaceFolder}/.vscode/c_runner.sh\" run \"${fileBasename}\" \"${fileBasenameNoExtension}\""
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -36,4 +36,3 @@
     }
   ]
 }
-
