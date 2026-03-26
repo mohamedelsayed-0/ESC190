@@ -1,32 +1,45 @@
-/*
-
-
-!.gitignore
-!/.vscode/
-!/.vscode/**
-!/Labs/
-!/Labs/**
-
-!/Lab_Files/
-!/Lab_Files/**
-
+# macOS
 .DS_Store
 **/.DS_Store
 
-# Build artifacts (C/C++)
+# Editors
+.idea/
+*.swp
+*.swo
+
+# VS Code: keep project settings, ignore generated local outputs
+.vscode/*
+!.vscode/
+!.vscode/*.json
+!.vscode/*.sh
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+torch-env/
+
+# C/C++ build artifacts
 **/build/
-**/build/**
 *.o
+*.obj
 *.out
 *.exe
 *.a
 *.so
 *.dylib
-*.obj
 *.dSYM/
-*.dSYM/**
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+compile_commands.json
 
 # Known local binaries
 .vscode/lab1
-.vscode/lab1.dSYM/
+Labs/Lab 9/brightness_versions
 Labs/lab3
+Labs/lab8
