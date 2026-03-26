@@ -43,3 +43,12 @@ compile_commands.json
 Labs/Lab 9/brightness_versions
 Labs/lab3
 Labs/lab8
+
+# Generated assignment/lab outputs
+Assignments/Assignment_2/img*.bin
+Assignments/Assignment_2/img*.png
+Assignments/Lab2/*.zip
+Labs/Lab 9/brightening.gif
+Labs/Lab 9/cannon_brightness_*.bin
+Labs/Lab 9/cannon_brightness_*.ppm
+Labs/Lab 9/image.ppm
